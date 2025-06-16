@@ -199,7 +199,7 @@ class MCPSessionManager:
       )
       self._connection_params = StdioConnectionParams(
           server_params=connection_params,
-          timeout=5,
+          timeout=30,
       )
     else:
       self._connection_params = connection_params
