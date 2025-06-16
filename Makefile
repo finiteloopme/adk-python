@@ -1,5 +1,6 @@
 .PHONY: release
 release:
+	rm -fr temp;
 	mkdir -p temp; cd temp; git clone https://github.com/finiteloopme/dcentral-labs; cd dcentral-labs/redbelly/ai-manager/adk-web;
 	cd temp; git clone https://github.com/google/adk-web 
 	rm -fr temp/adk-web/src/app/components
